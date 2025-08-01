@@ -9,10 +9,7 @@ function Fundo() {
         className="absolute top-20 left-0 w-screen h-screen object-cover z-0"
         alt="Fundo"
       />
-      <div
-        className="absolute 
-      6.left-20 top-2/3 z-30"
-      >
+      <div className="absolute left-20 top-2/3 z-30">
         <h1 className="text-3xl font-bold w-[400px]">
           Elegance in simplicity,
         </h1>

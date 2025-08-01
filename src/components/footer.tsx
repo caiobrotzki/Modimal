@@ -71,7 +71,7 @@ function Footer() {
           </ul>
         </div>
       </div>
-      <div className="bg-[#5A6D57] relative mt-[280px]  flex h-[20px] py-[20px] pl-[20px] pr-[20px] items-center border-white border-[1px]">
+      <div className="bg-[#5A6D57] relative  mt-[280px]  flex h-[20px] py-[20px] pl-[20px] pr-[20px] items-center border-white border-[1px]">
         <UserRectangle className="text-[25px]" />
       </div>
     </div>

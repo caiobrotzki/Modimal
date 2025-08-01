@@ -3,6 +3,7 @@ import User from "../assets/img/user.svg";
 import Shopping from "../assets/img/shopping-bag.svg";
 import Heart from "../assets/img/heart.svg";
 import { Link } from "react-router-dom";
+import { Leaf } from "phosphor-react";
 
 function Nav() {
   return (
@@ -12,10 +13,12 @@ function Nav() {
       </div>
       <div className="flex justify-between items-center bg-white py-3 px-6">
         <div>
-          <Link to="/">
-            <h1 className="text-[30px] font-bold ml-[55px]">modimal</h1>
-          </Link>
-
+          <div className="flex ">
+            <Link to="/" className="flex items-center">
+              <h1 className="text-[30px] font-bold ml-[55px]">modimal</h1>
+              <Leaf className="ml-2 rounded-full bg-[#5A6D57] text-white" size={22}  />
+            </Link>
+          </div>
           <p className="text-[10px] text-center ml-20">women clothing</p>
         </div>
         <div>
