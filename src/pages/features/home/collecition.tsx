@@ -4,70 +4,84 @@ import Img2 from "../../../assets/img/637d8076f450d0748072279f5cc2048f.png";
 
 function Collection() {
   return (
-    <div className="flex w-full items-center ml-[65px]">
-      <div>
-        <ul className="ml-[100px]">
-          <li className="ml-[200px] mb-[30px]">
+    <div className="w-full p-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="flex flex-col gap-8">
+          <div className="relative">
             <img
               src={Img2}
-              alt=""
-              className="h-[400px]
-              w-[400px]"
+              alt="Blouse"
+              className="w-full h-auto object-cover"
             />
             <Button
-              className="relative left-[298px] bg-white w-[80px] bottom-[40px] pl-[20px] pr-[20px]"
-              title="Bolues"
+              className="absolute bottom-4 right-4 bg-white px-4 py-2"
+              title="Blouses"
             />
-          </li>
-          <li className="ml-[200px] ">
-            <img className="w-[400px] h-[700px]" src={Img1} alt="" />
+          </div>
+          <div className="relative">
+            <img
+              src={Img1}
+              alt="Pants"
+              className="w-full h-auto object-cover"
+            />
             <Button
-              className="relative bottom-[50px] bg-white pl-[20px] pr-[20px] ml-[15px]"
+              className="absolute bottom-4 left-4 bg-white px-4 py-2"
               title="Pants"
             />
-          </li>
-        </ul>
-      </div>
-      <div>
-        <ul className="ml-[20px]">
-          <li className="mb-[30px]">
-            <img className="w-[400px] h-[700px] " src={Img1} alt="" />
+          </div>
+        </div>
+
+        {/* Coluna 2 */}
+        <div className="flex flex-col gap-8">
+          <div className="relative">
+            <img
+              src={Img1}
+              alt="Pants"
+              className="w-full h-auto object-cover"
+            />
             <Button
-              className="relative bottom-[50px] bg-white pl-[20px] pr-[20px] ml-[15px]"
+              className="absolute bottom-4 left-4 bg-white px-4 py-2"
               title="Pants"
             />
-          </li>
-          <li>
-            <img src={Img2} alt="" className="h-[400px] w-[400px]" />
-            <Button
-              className="relative left-[298px] bg-white w-[80px] bottom-[40px] pl-[20px] pr-[20px]"
-              title="Bolues"
-            />
-          </li>
-        </ul>
-      </div>
-      <div>
-        <ul className="">
-          <li className="ml-5 mb-[30px]">
+          </div>
+          <div className="relative">
             <img
               src={Img2}
-              alt=""
-              className="h-[400px]
-              w-[400px]"
+              alt="Blouse"
+              className="w-full h-auto object-cover"
             />
             <Button
-              className="relative left-[298px] bg-white w-[80px] bottom-[40px] pl-[20px] pr-[20px]"
-              title="Bolues"
+              className="absolute bottom-4 right-4 bg-white px-4 py-2"
+              title="Blouses"
             />
-          </li>
-          <li className="ml-5 ">
-            <img className="w-[400px] h-[700px]" src={Img1} alt="" />
+          </div>
+        </div>
+
+        {/* Coluna 3 */}
+        <div className="flex flex-col gap-8">
+          <div className="relative">
+            <img
+              src={Img2}
+              alt="Blouse"
+              className="w-full h-auto object-cover"
+            />
             <Button
-              className="relative bottom-[50px] bg-white pl-[20px] pr-[20px] ml-[15px]"
+              className="absolute bottom-4 right-4 bg-white px-4 py-2"
+              title="Blouses"
+            />
+          </div>
+          <div className="relative">
+            <img
+              src={Img1}
+              alt="Pants"
+              className="w-full h-auto object-cover"
+            />
+            <Button
+              className="absolute bottom-4 left-4 bg-white px-4 py-2"
               title="Pants"
             />
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
     </div>
   );
