@@ -2,48 +2,52 @@ import { AppleLogo, GoogleLogo, FacebookLogo } from "phosphor-react";
 import Input from "../../../components/input";
 import Button from "../../../components/button";
 import { Link } from "react-router-dom";
+
 function Reg() {
   return (
-    <div className="mt-[250px] relative right-2/4 w-[600px]">
-      <h1 className="font-semibold text-[50px] relative left-[190px]">Log in</h1>
-      <div className="relative  grid gap-2 mt-[30px]">
+    <div className="mt-[250px] ml-[20px] w-[600px]">
+      <h1 className="font-semibold text-[50px] text-center mb-6">Log in</h1>
+
+      <div className="grid gap-3">
         <Input
-          className="border- border-[2px] mb-[5px] py-3 pl-1 pr-[320px] rounded-md"
+          className="border-2 py-3 px-4 rounded-md w-full"
           type="email"
           placeholder="Email"
         />
         <Input
-          className="border- border-[2px] mb-[5px] py-3 pl-1 pr-[320px] rounded-md"
+          className="border-2 py-3 px-4 rounded-md w-full"
           type="password"
           placeholder="Password"
         />
-        <Button
-          className="py-3 bg-[#5A6D57] text-white px-[207px] rounded-md transition-all duration-300 hover:bg-[#4a5b4a]"
-          type="button"
-          title="Registre Now"
-        />
-        <div className="flex items-center relative left-[130px]">
-          <h1>New to modimal?</h1>
 
+        <Button
+          className="py-3 bg-[#5A6D57] text-white w-full rounded-md transition-all duration-300 hover:bg-[#4a5b4a]"
+          type="button"
+          title="Login"
+        />
+
+        <div className="flex justify-center items-center mt-4">
+          <span>New to Modimal?</span>
           <Link to="/registre">
             <Button
-              className="ml-[20px] text-[#748C70] py-4"
-              type="submit"
-              title=" create an account"
+              className="ml-4 text-[#748C70] py-2 px-4"
+              type="button"
+              title="Create an account"
             />
           </Link>
         </div>
-        <div className="relative left-[120px]">
-          <h1 className="ml-[130px] mb-5">Or</h1>
-          <ul className="flex space-x-5 ml-[60px]">
+
+        <div className="text-center mt-6">
+          <h1 className="mb-4">Or</h1>
+          <ul className="flex justify-center space-x-5">
             <li>
-              <AppleLogo className="text-[40px] bg-white rounded-full text-black " />
+              <AppleLogo className="text-[40px] bg-white rounded-full text-black" />
             </li>
             <li>
               <GoogleLogo className="text-[40px] rounded-full text-[#EA4335]" />
             </li>
             <li>
-              <FacebookLogo className="text-[40px]  bg-[#1877F2] rounded-full text-white" />
+              <FacebookLogo className="text-[40px] bg-[#1877F2] rounded-full text-white" />
             </li>
           </ul>
         </div>
@@ -51,4 +55,5 @@ function Reg() {
     </div>
   );
 }
+
 export default Reg;

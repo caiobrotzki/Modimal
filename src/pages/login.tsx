@@ -1,15 +1,11 @@
-import Image from "./features/login/imagem-login";
+import Image from "./features/user/Imagem-user";
 import Login from "./features/login/login";
 
 function User() {
   return (
-    <div className=" w-full flex justify-between">
-      <div>
-        <Image />
-      </div>
-      <div>
-        <Login />
-      </div>
+    <div className="w-full flex justify-start gap-[40px] px-[40px]">
+      <Image />
+      <Login />
     </div>
   );
 }
