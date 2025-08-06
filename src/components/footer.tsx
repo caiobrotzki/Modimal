@@ -1,4 +1,3 @@
-// components/footer.tsx
 import {
   Copyright,
   FacebookLogo,

@@ -5,15 +5,7 @@ import Heart from "../assets/img/heart.svg";
 import { Link } from "react-router-dom";
 import { Leaf } from "phosphor-react";
 
-const navItems = [
-  "Home",
-  "Collection",
-  "New In",
-  "Modiweek",
-  "Plus Size",
-  "Sustainability",
-];
-
+const navItems = ["Home","Collection","New In","Modiweek","Plus Size","Sustainability",];
 function Nav() {
   return (
     <div className="w-full h-[60px] fixed top-0 z-50">
@@ -45,18 +37,18 @@ function Nav() {
         <div>
           <ul className="flex space-x-6 mr-[20px]">
             <li>
-              <img src={Search} alt="Search" className="w-8 h-8" />
+              <img src={Search} alt="Search" className="w-5 h-5" />
             </li>
             <Link to="/Registre">
               <li>
-                <img src={User} alt="User" className="w-8 h-8" />
+                <img src={User} alt="User" className="w-5 h-5" />
               </li>
             </Link>
             <li>
-              <img src={Heart} alt="Heart" className="w-8 h-8" />
+              <img src={Heart} alt="Heart" className="w-5 h-5" />
             </li>
             <li>
-              <img src={Shopping} alt="Shopping" className="w-8 h-8" />
+              <img src={Shopping} alt="Shopping" className="w-5 h-5" />
             </li>
           </ul>
         </div>
