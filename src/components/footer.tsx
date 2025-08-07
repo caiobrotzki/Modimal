@@ -7,6 +7,7 @@ import {
   UserRectangle,
 } from "phosphor-react";
 import Input from "./input";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -58,7 +59,11 @@ function Footer() {
             <li>Orders & Shipping</li>
             <li>Returns & Refunds</li>
             <li>FAQs</li>
-            <li>Contact Us</li>
+            <li>
+              <Link to="/contact" className="hover:underline">
+                Contact Us
+              </Link>
+            </li>
           </ul>
         </div>
         <div>

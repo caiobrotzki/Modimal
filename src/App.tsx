@@ -5,6 +5,7 @@ import Footer from "./components/footer";
 import Home from "./pages/home";
 import User from "./pages/Register";
 import Login from "./pages/login";
+import ContactUS from "./pages/ContactUS";
 
 const App: React.FC = () => {
   return (
@@ -14,6 +15,7 @@ const App: React.FC = () => {
         <Route path="/" element={<Home />} />
         <Route path="/Registre" element={<User />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/contact" element = {<ContactUS />} />
       </Routes>
       <Footer />
     </Router>
