@@ -37,7 +37,7 @@ export default function ContactUS() {
           </div>
           <div className="w-full flex justify-end">
             <button
-              className="mt-8 py-3 rounded-lg text-white bg-[#5A6D57] font-semibold text-lg transition w-[288px] hover:bg-[#46604a] shadow"
+              className="mt-8 py-3 rounded-lg text-white bg-[#5A6D57] font-semibold text-lg transition duration-300 w-[288px] hover:bg-[#46604a] shadow"
               type="submit"
             >
               Send
