@@ -5,7 +5,14 @@ import Heart from "../assets/img/heart.svg";
 import { Link } from "react-router-dom";
 import { Leaf } from "phosphor-react";
 
-const navItems = ["Home","Collection","New In","Modiweek","Plus Size","Sustainability",];
+const navItems = [
+  "Home",
+  "Collection",
+  "New In",
+  "Modiweek",
+  "Plus Size",
+  "Sustainability",
+];
 function Nav() {
   return (
     <div className="w-full h-[60px] fixed top-0 z-50">
@@ -17,7 +24,10 @@ function Nav() {
           <div className="flex">
             <Link to="/" className="flex items-center">
               <h1 className="text-[30px] font-bold ml-[55px]">modimal</h1>
-              <Leaf className="ml-2 rounded-full bg-[#5A6D57] text-white" size={22} />
+              <Leaf
+                className="ml-2 rounded-full bg-[#5A6D57] text-white"
+                size={22}
+              />
             </Link>
           </div>
           <p className="text-[10px] text-center ml-20">women clothing</p>
@@ -29,7 +39,13 @@ function Nav() {
                 key={item}
                 className="hover:text-[#5A6D57] hover:scale-105 transition-all duration-300"
               >
-                {item}
+                {item === "Home" ? (
+                  <Link to="/" className="">
+                    {item}
+                  </Link>
+                ) : (
+                  item
+                )}
               </li>
             ))}
           </ul>
@@ -57,4 +73,4 @@ function Nav() {
   );
 }
 
-export default Nav
+export default Nav;

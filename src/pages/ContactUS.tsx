@@ -1,4 +1,5 @@
 import Form  from "../pages/features/Contact/form";
+import Cards from "../pages/features/Contact/cardss"
 export default function ContactUS() {
   return (
     <div className="mt-[200px] mb-20">
@@ -7,7 +8,9 @@ export default function ContactUS() {
       </div>
       <div>
         <Form />
+        <Cards />
       </div>
+     
     </div>
   );
 }

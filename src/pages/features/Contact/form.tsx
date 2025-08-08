@@ -1,5 +1,4 @@
 import { Envelope } from "phosphor-react";
-import Input from "../../../components/input";
 
 const ArrayInput = [
   { placeholder: "Full Name", type: "text" },
@@ -20,13 +19,22 @@ export default function ContactUS() {
         <h1 className="mb-4 font-semibold text-2xl">Your Information</h1>
         <form className="flex flex-col gap-4">
           {ArrayInput.map((input, idx) => (
-            <Input
+            <input
               key={idx}
               type={input.type}
               placeholder={input.placeholder}
               className="border-b h-[40px] pl-7 w-full"
+              required
             />
           ))}
+          <div>
+            <label className="inline-flex items-center">
+              <input type="checkbox" required className="form-checkbox text-red-600" />
+              <span className="ml-2 text-gray-700 text-sm">
+                I have read and understood the contact us privacy and policy.
+              </span>
+            </label>
+          </div>
           <div className="w-full flex justify-end">
             <button
               className="mt-8 py-3 rounded-lg text-white bg-[#5A6D57] font-semibold text-lg transition w-[288px] hover:bg-[#46604a] shadow"
