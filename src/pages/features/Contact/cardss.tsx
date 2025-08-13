@@ -33,6 +33,7 @@ export default function Cards() {
             title={card.title}
             subtitle={card.subtitle}
             button={card.button}
+            className="hover:scale-110 transition-all duration-500 "
           />
         ))}
       </div>
